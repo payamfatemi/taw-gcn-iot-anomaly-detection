@@ -13,6 +13,7 @@ authors:
     given-names: Abbas
 version: 0.1.0
 date-released: 2026-07-15
+doi: 10.5281/zenodo.21365109
 license: MIT
 repository-code: "https://github.com/payamfatemi/taw-gcn-iot-anomaly-detection"
 keywords:

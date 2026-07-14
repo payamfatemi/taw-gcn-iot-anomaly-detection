@@ -1,5 +1,7 @@
 # TAW-GCN: Topology-Aware Weighted Graph Convolutional Network
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21365109.svg)](https://doi.org/10.5281/zenodo.21365109)
+
 Reference implementation of the proposed **Topology-Aware Weighted Graph Convolutional Network (TAW-GCN)** for binary anomaly detection in IoT traffic. This repository implements only the proposed method; external baselines are intentionally excluded. Internal ablation variants are included.
 
 ## Implemented pipeline
@@ -161,6 +163,8 @@ See `docs/reproducibility.md` and `docs/paper_to_code_mapping.md`.
 
 ## Code and data availability
 
+- Archived release `v0.1.0`: [10.5281/zenodo.21365109](https://doi.org/10.5281/zenodo.21365109)
+
 The source code is maintained at:
 
 https://github.com/payamfatemi/taw-gcn-iot-anomaly-detection
@@ -197,7 +201,8 @@ After the `v0.1.0` release is archived in Zenodo, the version-specific DOI and D
   year      = {2026},
   version   = {0.1.0},
   url       = {https://github.com/payamfatemi/taw-gcn-iot-anomaly-detection},
-  license   = {MIT}
+  license   = {MIT},
+  doi = {10.5281/zenodo.21365109}
 }
 ```
 
