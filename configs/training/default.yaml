@@ -1,0 +1,5 @@
+training:
+  learning_rate: 0.001
+  weight_decay: 0.0005
+  maximum_epochs: 200
+  decision_threshold: 0.50

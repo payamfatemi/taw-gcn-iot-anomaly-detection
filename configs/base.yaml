@@ -1,0 +1,106 @@
+project:
+  name: taw-gcn-iot-anomaly-detection
+  version: 0.1.0
+  seed: 42
+  deterministic: true
+
+paths:
+  processed_root: data/processed
+  split_root: data/splits
+  transformer_root: data/transformers
+  graph_root: data/graphs
+  output_root: outputs/experiments
+
+runtime:
+  device: auto
+  num_workers: 0
+
+split:
+  strategy: grouped_stratified
+  train_ratio: 0.70
+  validation_ratio: 0.15
+  test_ratio: 0.15
+  group_columns: [capture_id, scenario_id]
+  time_column: timestamp
+  random_state: 42
+  search_attempts: 64
+
+preprocessing:
+  remove_duplicates: true
+  replace_infinite: true
+  numeric_imputation: median
+  categorical_imputation: most_frequent
+  categorical_encoding: ordinal_minmax
+  epsilon: 1.0e-12
+  output_format: csv
+  exclude_feature_columns:
+    - label
+    - raw_label
+    - record_id
+    - timestamp
+    - src_ip
+    - dst_ip
+    - src_port
+    - dst_port
+    - capture_id
+    - scenario_id
+  categorical_feature_candidates:
+    - protocol
+    - service
+    - conn_state
+
+# Values below are implementation defaults because the article does not report
+# exact numerical values for every graph and training hyperparameter.
+graph:
+  alpha: 0.333333
+  beta: 0.333333
+  gamma: 0.333334
+  tau: 60.0
+  delta: 0.50
+  epsilon: 1.0e-12
+  renormalize_enabled_weights: true
+  temporal_enabled: true
+  communication_enabled: true
+  behavioral_enabled: true
+  weighted_edges: true
+  graph_propagation: true
+  communication_fields: [src_ip, dst_ip, src_port, dst_port, protocol]
+  candidate_generation:
+    temporal_window: 120.0
+    temporal_neighbors_per_node: 16
+    communication_neighbors_per_value: 8
+    behavioral_top_k: 12
+    maximum_candidates_per_node: 64
+  undirected: true
+  self_loop_weight: 1.0
+  normalize: symmetric
+  minimum_average_degree: 1.0
+  maximum_average_degree: 128.0
+  maximum_isolated_ratio: 0.35
+
+model:
+  hidden_dimensions: [64, 32]
+  activation: relu
+  dropout: 0.10
+  output_dimension: 1
+
+training:
+  optimizer: adam
+  learning_rate: 0.001
+  weight_decay: 0.0005
+  maximum_epochs: 200
+  decision_threshold: 0.50
+  class_weighting: balanced
+  gradient_clip_norm: 5.0
+  early_stopping:
+    enabled: true
+    monitor: f1
+    mode: max
+    patience: 20
+    minimum_delta: 0.0001
+  save_every_n_epochs: 25
+
+evaluation:
+  metrics: [accuracy, precision, recall, f1]
+  zero_division: 0
+  save_predictions: true

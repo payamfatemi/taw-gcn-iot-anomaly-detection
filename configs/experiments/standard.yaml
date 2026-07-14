@@ -1,0 +1,4 @@
+experiment:
+  name: standard
+  seeds: [42]
+  graph_mode: inductive

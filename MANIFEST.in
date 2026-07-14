@@ -1,0 +1,3 @@
+include README.md LICENSE CITATION.cff .zenodo.json
+recursive-include configs *.yaml
+recursive-include docs *.md

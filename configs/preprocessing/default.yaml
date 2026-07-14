@@ -1,0 +1,7 @@
+preprocessing:
+  remove_duplicates: true
+  replace_infinite: true
+  numeric_imputation: median
+  categorical_imputation: most_frequent
+  categorical_encoding: ordinal_minmax
+  output_format: csv

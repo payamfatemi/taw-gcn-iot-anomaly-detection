@@ -1,0 +1,40 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the software and the associated TAW-GCN article."
+title: "TAW-GCN: Topology-Aware Weighted Graph Convolutional Network for IoT Anomaly Detection"
+type: software
+authors:
+  - family-names: Derkhshanfard
+    given-names: Nahideh
+  - family-names: Fatemi
+    given-names: Seyed Payam
+  - family-names: Sefati
+    given-names: Seyed Salar
+  - family-names: Mirzaei
+    given-names: Abbas
+version: 0.1.0
+date-released: 2026-07-15
+license: MIT
+repository-code: "https://github.com/payamfatemi/taw-gcn-iot-anomaly-detection"
+keywords:
+  - Internet of Things
+  - anomaly detection
+  - graph convolutional network
+  - weighted graph
+  - network security
+abstract: >-
+  Reproducible research software implementing the proposed Topology-Aware
+  Weighted Graph Convolutional Network for binary anomaly detection in IoT
+  traffic using temporal, communication-level, and behavioral dependencies.
+preferred-citation:
+  type: article
+  title: "A Topology-Aware Weighted Graph Convolutional Framework for Scalable Anomaly Detection in IoT Networks"
+  authors:
+    - family-names: Derkhshanfard
+      given-names: Nahideh
+    - family-names: Fatemi
+      given-names: Seyed Payam
+    - family-names: Sefati
+      given-names: Seyed Salar
+    - family-names: Mirzaei
+      given-names: Abbas
+  year: 2026

@@ -1,0 +1,6 @@
+graph:
+  alpha: 0.333333
+  beta: 0.333333
+  gamma: 0.333334
+  tau: 60.0
+  delta: 0.50

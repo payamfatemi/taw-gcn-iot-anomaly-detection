@@ -1,0 +1,17 @@
+dataset:
+  name: ton_iot
+  adapter: ton_iot
+  file_globs: ["*.csv", "*.parquet"]
+  aliases:
+    timestamp: [timestamp, ts, time]
+    src_ip: [src_ip, source_ip, src]
+    dst_ip: [dst_ip, destination_ip, dst]
+    src_port: [src_port, source_port, sport]
+    dst_port: [dst_port, destination_port, dport]
+    protocol: [proto, protocol]
+    service: [service]
+    conn_state: [conn_state, state]
+    label: [label, type, attack, attack_type]
+    capture_id: [capture_id, source_file]
+    scenario_id: [scenario_id, scenario]
+  normal_label_tokens: [normal, benign, "0"]

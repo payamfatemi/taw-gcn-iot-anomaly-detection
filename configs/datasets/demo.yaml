@@ -1,0 +1,15 @@
+dataset:
+  name: demo
+  adapter: demo
+  file_globs: ["*.csv"]
+  aliases:
+    timestamp: [timestamp, ts]
+    src_ip: [src_ip]
+    dst_ip: [dst_ip]
+    src_port: [src_port]
+    dst_port: [dst_port]
+    protocol: [protocol, proto]
+    label: [label]
+    capture_id: [capture_id]
+    scenario_id: [scenario_id]
+  normal_label_tokens: [normal, benign, "0"]

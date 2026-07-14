@@ -1,0 +1,9 @@
+.git
+.venv
+__pycache__
+data/raw
+data/interim
+data/processed
+data/graphs
+outputs
+notebooks

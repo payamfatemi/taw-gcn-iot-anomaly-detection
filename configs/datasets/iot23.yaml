@@ -1,0 +1,17 @@
+dataset:
+  name: iot23
+  adapter: iot23
+  file_globs: ["*.csv", "*.tsv", "*.parquet", "*.log.labeled"]
+  aliases:
+    timestamp: [ts, timestamp, time]
+    src_ip: [id.orig_h, src_ip, source_ip, src]
+    dst_ip: [id.resp_h, dst_ip, destination_ip, dst]
+    src_port: [id.orig_p, src_port, source_port, sport]
+    dst_port: [id.resp_p, dst_port, destination_port, dport]
+    protocol: [proto, protocol]
+    service: [service]
+    conn_state: [conn_state, state]
+    label: [label, type, attack, attack_type]
+    capture_id: [capture_id, capture, scenario]
+    scenario_id: [scenario_id, scenario]
+  normal_label_tokens: [benign, normal, "0", "-   benign"]

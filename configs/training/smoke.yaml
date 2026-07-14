@@ -1,0 +1,12 @@
+model:
+  hidden_dimensions: [16, 8]
+  dropout: 0.0
+training:
+  maximum_epochs: 5
+  save_every_n_epochs: 0
+  early_stopping:
+    enabled: true
+    monitor: f1
+    mode: max
+    patience: 3
+    minimum_delta: 0.0001

@@ -1,0 +1,19 @@
+{
+  "project": "taw-gcn-iot-anomaly-detection",
+  "version": "0.1.0",
+  "release_date": "2026-07-15",
+  "scope": "Reference implementation of the proposed TAW-GCN method only; external baseline implementations are excluded; internal ablation variants are included.",
+  "validation": {
+    "pytest": "10 passed",
+    "ruff": "passed",
+    "mypy": "115 source files passed",
+    "end_to_end_demo": "passed",
+    "artifact_checksum_verification": "passed",
+    "citation_metadata_parsing": "passed",
+    "zenodo_metadata_parsing": "passed",
+    "runtime_warnings": "0"
+  },
+  "raw_datasets_included": false,
+  "python_source_files": 143,
+  "python_source_lines": 2995
+}

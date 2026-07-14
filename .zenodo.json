@@ -1,0 +1,41 @@
+{
+  "title": "TAW-GCN: Topology-Aware Weighted Graph Convolutional Network for IoT Anomaly Detection",
+  "description": "Reproducible implementation of the proposed TAW-GCN method for binary anomaly detection in IoT traffic. The software includes leakage-aware preprocessing, sparse topology-aware graph construction, weighted graph convolution, training, evaluation, internal ablation studies, tests, and reproducibility metadata. External baseline implementations are intentionally excluded.",
+  "upload_type": "software",
+  "publication_date": "2026-07-15",
+  "version": "0.1.0",
+  "license": "MIT",
+  "access_right": "open",
+  "creators": [
+    {
+      "name": "Derkhshanfard, Nahideh"
+    },
+    {
+      "name": "Fatemi, Seyed Payam"
+    },
+    {
+      "name": "Sefati, Seyed Salar"
+    },
+    {
+      "name": "Mirzaei, Abbas"
+    }
+  ],
+  "keywords": [
+    "Internet of Things",
+    "Anomaly Detection",
+    "Graph Convolutional Network",
+    "Weighted Graph Learning",
+    "IoT Traffic Analysis",
+    "Network Security",
+    "Reproducible Research"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/payamfatemi/taw-gcn-iot-anomaly-detection",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ],
+  "communities": [],
+  "notes": "Raw IoT-23 and TON_IoT datasets are not redistributed. Users must obtain them from their official providers and comply with their licenses. The repository provides dataset adapters, configuration files, preparation scripts, tests, and reproducibility metadata."
+}

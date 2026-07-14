@@ -1,0 +1,5 @@
+experiment:
+  name: processing_time
+  target_milliseconds: [5, 20, 50, 100]
+  interpretation: measured_inference_latency
+  synthetic_sleep_is_forbidden: true

@@ -1,0 +1,4 @@
+experiment:
+  name: data_volume
+  values: [100000, 500000, 1000000, 5000000, 10000000, 20000000]
+  skip_when_insufficient_unique_records: true

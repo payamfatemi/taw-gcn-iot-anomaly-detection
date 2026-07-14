@@ -1,0 +1,5 @@
+model:
+  hidden_dimensions: [64, 32]
+  activation: relu
+  dropout: 0.10
+  output_dimension: 1

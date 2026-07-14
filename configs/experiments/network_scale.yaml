@@ -1,0 +1,5 @@
+experiment:
+  name: network_scale
+  device_counts: [50, 200, 1000, 5000, 10000]
+  device_identifier: src_ip
+  skip_when_insufficient_unique_devices: true

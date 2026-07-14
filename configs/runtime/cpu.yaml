@@ -1,0 +1,3 @@
+runtime:
+  device: cpu
+  num_workers: 0

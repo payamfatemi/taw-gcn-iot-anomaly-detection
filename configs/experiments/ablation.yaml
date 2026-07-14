@@ -1,0 +1,18 @@
+experiment:
+  name: ablation
+  variants:
+    full: {}
+    without_temporal:
+      graph.temporal_enabled: false
+    without_communication:
+      graph.communication_enabled: false
+    without_behavioral:
+      graph.behavioral_enabled: false
+    unweighted_graph:
+      graph.weighted_edges: false
+    without_graph_propagation:
+      graph.temporal_enabled: false
+      graph.communication_enabled: false
+      graph.behavioral_enabled: false
+      graph.weighted_edges: false
+      graph.graph_propagation: false
